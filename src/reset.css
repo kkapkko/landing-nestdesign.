@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+}
+
+img {
+	width: auto;
+	height: auto;
+}
+
+input {
+	background: none;
+	user-select: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+}

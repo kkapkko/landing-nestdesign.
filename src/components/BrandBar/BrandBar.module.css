@@ -1,0 +1,40 @@
+.brands {
+	padding: 44px 24px;
+	overflow: hidden;
+}
+
+.brands_container {
+	max-width: 1168px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	row-gap: 40px;
+	column-gap: 40px;
+}
+
+@media (max-width: 768px) {
+
+	.brands {
+		padding: 44px 24px 24px;
+	}
+	.brands_container {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 50px;
+		column-gap: 150px;
+	}
+}
+
+@media (max-width: 520px) {
+	.brands_container {
+		column-gap: 80px;
+	}
+}
+
+@media (max-width: 370px) {
+	.brands_container {
+		column-gap: 200px;
+	}
+}
