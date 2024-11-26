@@ -1,9 +1,22 @@
+import { motion } from "motion/react";
 import styleFooter from "./Footer.module.css";
 import { footerText, footerServices } from "./footer-data";
+import {
+	animationVariants,
+	transitionSettings,
+	viewportSettings,
+} from "../../motion-setting";
 
 const Footer = () => {
 	return (
-		<footer className={styleFooter.footer} id="contact">
+		<motion.footer
+			className={styleFooter.footer}
+			id="contact"
+			initial={animationVariants.hidden}
+			whileInView={animationVariants.visible}
+			variants={animationVariants}
+			transition={transitionSettings}
+			viewport={viewportSettings}>
 			<div className="container">
 				<h1 className={styleFooter.footer_title}>Lets work together</h1>
 				<div className={styleFooter.footer_container}>
@@ -29,7 +42,7 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-		</footer>
+		</motion.footer>
 	);
 };
 

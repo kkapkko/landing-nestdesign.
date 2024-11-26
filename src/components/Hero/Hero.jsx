@@ -1,9 +1,21 @@
 import heroStyle from "./Hero.module.css";
 import heroImage from "../../assets/images/hero-img.png";
+import { motion } from "motion/react";
+import {
+	animationVariants,
+	transitionSettings,
+	viewportSettings,
+} from "../../motion-setting";
 
 const Hero = () => {
 	return (
-		<section className={heroStyle.hero}>
+		<motion.section
+			className={heroStyle.hero}
+			initial={animationVariants.hidden}
+			whileInView={animationVariants.visible}
+			variants={animationVariants}
+			transition={transitionSettings}
+			viewport={viewportSettings}>
 			<div className={heroStyle.hero_container}>
 				<div className={heroStyle.hero_left}>
 					<h3 className={heroStyle.hero_left__subtitle}>
@@ -22,7 +34,7 @@ const Hero = () => {
 					<img src={heroImage} alt="hero-img" />
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

@@ -1,5 +1,11 @@
 import styleTestimonial from "./Testimonial.module.css";
 import { testimonialData } from "./testimonial-data";
+import { motion } from "motion/react";
+import {
+	animationVariants,
+	transitionSettings,
+	viewportSettings,
+} from "../../motion-setting";
 
 const Testimonial = () => {
 	return (
@@ -9,7 +15,14 @@ const Testimonial = () => {
 				<div className={styleTestimonial.testimonial_container}>
 					{testimonialData.map((item) => {
 						return (
-							<div className={styleTestimonial.testimonial_card} key={item.id}>
+							<motion.div
+								className={styleTestimonial.testimonial_card}
+								key={item.id}
+								initial={animationVariants.hidden}
+								whileInView={animationVariants.visible}
+								variants={animationVariants}
+								transition={transitionSettings}
+								viewport={viewportSettings}>
 								<p className={styleTestimonial.testimonial_card__text}>
 									{item.text}
 								</p>
@@ -23,7 +36,7 @@ const Testimonial = () => {
 										<h6>{item.subtitle}</h6>
 									</div>
 								</div>
-							</div>
+							</motion.div>
 						);
 					})}
 				</div>
