@@ -9,21 +9,21 @@ import {
 const skillsData = [
 	{
 		id: 1,
-		image: "./src/assets/images/skills-1.svg",
+		image: "./images/skills-1.svg",
 		title: "Product Design",
 		description:
 			"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
 	},
 	{
 		id: 2,
-		image: "./src/assets/images/skills-2.svg",
+		image: "./images/skills-2.svg",
 		title: "Visual Design",
 		description:
 			"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",
 	},
 	{
 		id: 3,
-		image: "./src/assets/images/skills-3.svg",
+		image: "./images/skills-3.svg",
 		title: "Art Direction",
 		description:
 			"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com",

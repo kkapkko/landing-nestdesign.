@@ -1,5 +1,5 @@
 import heroStyle from "./Hero.module.css";
-import heroImage from "../../assets/images/hero-img.png";
+import heroImage from "/images/hero-img.png";
 import { motion } from "motion/react";
 import {
 	animationVariants,
